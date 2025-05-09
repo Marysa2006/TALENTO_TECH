@@ -1,0 +1,25 @@
+h2{
+    font-style:oblique;
+    color: rgb(116, 6, 116);
+    background-color: cornflowerblue; text-align: center;
+    border:deeppink dashed;
+}
+
+p{
+    font-style:italic;
+    font-size:x-small;
+    text-decoration:underline;
+    text-align: justify;
+}
+
+img{
+    border-radius: 80%;
+    cursor:grab;
+}
+
+table, th, td{
+    border: 2px solid;
+    border-radius: 4%;
+    border-collapse: collapse;
+    width:100%;
+}

@@ -1,0 +1,48 @@
+SESION 11:
+
+console.log("---------------------------------------------------");
+console.log("::::::::::::::::::::Ejercicio 1::::::::::::::::::::");
+console.log("---------------------------------------------------");
+let nota = 90;
+if(nota >= 90){
+    console.log("Aprobado con Honores :D");
+}else if(nota>=70){
+    console.log("Aprobado :) ");
+}else{
+    console.log("Reprobado :c")
+}
+
+console.log("---------------------------------------------------");
+console.log("::::::::::::::::::::Ejercicio 2::::::::::::::::::::");
+console.log("---------------------------------------------------");
+let num = 25;
+if(num%2==0){
+    console.log("Es PAR");
+}else{
+    console.log("Es IMPAR");
+}
+
+console.log("---------------------------------------------------");
+console.log("::::::::::::::::::::Ejercicio 3::::::::::::::::::::");
+console.log("---------------------------------------------------");
+let total = 150;
+let desc = 0;
+if(total>100){
+    //total = total-(total*0.1);
+    //total -= total*0.1
+    desc = total*0.1;
+    total = total - desc;
+}
+console.log("Total a pagar:",total);
+
+console.log("---------------------------------------------------");
+console.log("::::::::::::::::::::Ejercicio 4::::::::::::::::::::");
+console.log("---------------------------------------------------");
+
+let numRandom = parseInt(Math.random()*10);
+let numAdivin = 7;
+if(numRandom == numAdivin){
+    console.log("Felicidades!! Adivinaste :D");
+}else{
+    console.log("Lo siento :c el numero era", numRandom);
+}

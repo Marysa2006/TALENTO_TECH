@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #b6e4f2;
+    color: #202020;
+}
+
+h1{
+    color: #08269c;
+}
+
+ul{
+    color : #000000;
+    list-style-type: square;
+}
+
+ol{
+    color : #850000;
+}

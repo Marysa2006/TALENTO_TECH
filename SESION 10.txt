@@ -1,0 +1,60 @@
+SESION 10:
+
+console.log("Parte 1 - Declaracion de variables y tipos de datos");
+console.log("-------------------------------------------------");
+let nombre = "Marisa";
+let edad = 18;
+let esEstudiante = true;
+console.log("Nombre: ", nombre)
+console.log("Edad: ", edad)
+console.log("Es estudiante?", esEstudiante)
+console.log("-------------------------------------------------")
+nombre = "Martha";
+edad = 42;
+esEstudiante = false;
+console.log("Nombre: ", nombre)
+console.log("Edad: ", edad)
+console.log("Es estudiante?", esEstudiante)
+
+console.log("Parte 2 - Operaciones matematicas y comparacion");
+console.log("-------------------------------------------------");
+let a = 25;
+let b = 5;
+let sum = 0;
+let rest = 0;
+let mult = 0;
+let div = 0;
+console.log("A=", a, "B=", b);
+sum = a+b;
+rest = a-b;
+mult = a*b;
+div = a/b;
+console.log("*************Resultados*************");
+console.log("Suma: ", sum);
+console.log("Resta: ", rest);
+console.log("Multiplicacion: ", mult);
+console.log("Division: ", div);
+console.log("a==b:", a==b);
+console.log("a!=b:", a!=b);
+console.log("a>b:", a>b);
+console.log("a<b:", a<b);
+console.log("a>=b:", a>=b);
+console.log("a<=b:", a<=b);
+
+console.log("Parte 3 - Operadores logicos y concatenacion de strings");
+console.log("-------------------------------------------------");
+let esMayordeEdad = true;
+let tieneLicencia = false;
+console.log("Mayor de edad?:", esMayordeEdad);
+console.log("Tiene licencia?:", tieneLicencia);
+console.log("**Acceso a Bono**");
+console.log("=====",esMayordeEdad && tieneLicencia,"=====");
+console.log("**Acceso a Evento**");
+console.log("=====",esMayordeEdad || tieneLicencia,"=====");
+console.log("-------------------------------------------------");
+let student = "Maria Isabel";
+let age = 18;
+let mensaje = "Bienvenido Sr(a) " + student + ". Su edad es: " + age + " años."
+console.log(mensaje);
+let mensaje2 = `Bienvenido Sr(a) ${student}. Su edad es: ${age} años.`
+console.log(mensaje2);

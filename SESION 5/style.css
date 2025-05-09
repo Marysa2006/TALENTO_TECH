@@ -1,0 +1,60 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    h3 {
+        color: #333;
+        text-align: center;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        margin-top: 5px;
+        margin-left: 20%;
+        padding: 10px 10px;
+        background-color: #4c81af;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 20%;
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 1px;
+        margin-left: 20%;
+        padding: 10px 10px;
+        background-color: #45a049;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 20%;
+        font-size: 15px;
+        
+    }
