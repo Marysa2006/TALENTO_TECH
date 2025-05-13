@@ -1,0 +1,38 @@
+SESION 12:
+console.log("**************************************************************************************");
+console.log("===============================Estructuras de control=================================");
+console.log("**************************************************************************************");
+//let num=parseInt(prompt("Ingrese un Numero: "));
+//console.log("Salida:", num);
+
+console.log(" ");
+console.log("------------------------------------------FOR-----------------------------------------");
+let bus = [25, 50, 30, 50, 40, 80, 90, 10, 60];
+let suma = 0;
+for(let i=0; i<bus.length; i++){
+    console.log("Peso: ", bus[i]);
+    suma = suma + bus[i];
+}
+console.log("Peso total: ", suma, "Kg");
+console.log("El promedio es:", suma/bus.length)
+
+console.log(" ");
+console.log("-----------------------------------------WHILE----------------------------------------");
+let n = 0;
+while(n >= 0){
+    n=prompt("Ingrese un Numero: ");
+}
+
+console.log(" ");
+console.log("----------------------------------------DO-WHILE--------------------------------------");
+let claveSecreta = "0123";
+let pin = "0000";
+do{
+    pin = prompt("Ingrese su pin: ");
+}while(claveSecreta != pin)
+
+/*
+while(claveSecreta != pin){
+    pin = prompt("Ingrese su pin: ");
+}
+*/
