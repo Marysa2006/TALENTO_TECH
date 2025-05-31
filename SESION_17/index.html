@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web - Taller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>María Isabel García Moscoso</h1>
+        <h2>4° Semestre - Ingeniería de Sistemas</h2>
+        <h3>Área: Tecnología e Informática</h3>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Hola, mi nombre es María Isabel García Moscoso. Tengo 19 años y soy estudiante de Ingeniería de Sistemas en el cuarto semestre. Vivo en Valledupar, Cesar, y me apasiona el diseño de páginas y aplicaciones, y la programación web.</p>
+            <button class="welcome-btn" onclick="mostrarBienvenida()">¡Mensaje de Bienvenida!</button>
+        </section>
+
+        <section>
+            <h2> Habilidades e intereses</h2>
+            <ul>
+                <li>
+                    <strong>Habilidades:</strong> Entre mis habilidades técnicas están:
+                    <ol>
+                        <li>HTML y CSS</li>
+                        <li>JavaScript básico</li>
+                        <li>Diseño de interfaces de usuario</li>
+                        <li>Uso de Figma como herramienta de diseño</li>
+                        <li>Conocimientos básicos de bases de datos</li>
+                        <li>Conocimientos básicos de Java, C++ Y C#</li>
+                        <li>Conocimientos básicos de Git y GitHub</li>
+                        <li>Trabajo en equipo</li>
+                    </ol>
+                </li>
+                <br>
+                <li>
+                    <strong>Intereses:</strong> Estoy interesada en aprender más sobre desarrollo web y diseño de interfaces de usuario.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pasatiempos</h2>
+            <p>Me encanta escuchar música al momento de estudiar o realizar mis responsabilidades hogareñas, especialmente baladas románticas y música pop. Si no estoy muy atareada de tareas, disfruto de la lectura los fines de semana, aunque a veces prefiero jugar un rato, para salir de la rutina del estudio y los quehaceres</p>
+        </section>
+
+        <section>
+            <h2>Mi foto</h2>
+            <img src="yo.jpg" alt="Foto mía" width="300" height="350">
+        </section>
+    </main>
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" placeholder="¿Sobre qué quieres escribir?">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            
+            <button type="submit">Enviar Mensaje</button>
+            <button type="button" onclick="limpiarFormulario()">Limpiar Formulario</button>
+        </form>
+    </div>
+    <footer>
+        <h3>Mis Datos de Contacto</h3>
+            <p><strong>Correo:</strong> mariaisabelgarciamoscoso@gmail.com</p>
+            <p><strong>Teléfono:</strong> +57 304 297 4189</p>
+
+            <p>Trabajo realizado en clase de Tecnología e Informática</p>
+            <p>&copy; 2024 María Isabel García Moscoso - 4° Semestre Ingeniería de Sistemas</p>
+        </h3>
+    </footer>
+
+    <script>
+        function mostrarBienvenida() {
+            alert('¡Bienvenido/a a mi portafolio personal! 🌟\n\nSoy María Isabel García Moscoso, estudiante de Ingeniería de Sistemas.\n\nGracias por visitar mi página web!');
+        }
+
+        const form = document.getElementById('contactForm'); 
+        form.addEventListener('submit', function(event) { 
+            const name = document.getElementById('name').value; 
+            const email = document.getElementById('email').value; 
+            if (name === '' || email === '') { 
+                alert('Por favor, completa todos los campos.'); 
+                event.preventDefault(); 
+            } else { 
+                alert('¡Formulario enviado correctamente!'); 
+            } 
+        });
+        // Función para limpiar el formulario
+        function limpiarFormulario() {
+                document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
